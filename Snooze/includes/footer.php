@@ -1,3 +1,4 @@
+<?php wp_footer(); ?>
     <!-- Pied de page -->
     <div class="footer-dark">
         <footer>

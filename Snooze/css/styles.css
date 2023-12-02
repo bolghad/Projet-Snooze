@@ -36,6 +36,12 @@ body{
     margin: 5px; /* Espacement entre les boutons */
 }
 
+#site-header{
+  background-color: rgba(255, 255, 255, 0.3);
+  padding-bottom: 3vh;
+  
+}
+
 .header-button:hover {
     color: rgb(192, 173, 143); /* Couleur du texte au survol */
 }
@@ -60,7 +66,7 @@ body{
     justify-content: space-between;
     margin-left: 0px; /* Marge à gauche de l'écran */
     margin-right: 0px; /* Marge à droite de l'écran */
-    padding-top: 4vh;
+    padding-top: 3vh;
 }
 
 #lang-toggle {

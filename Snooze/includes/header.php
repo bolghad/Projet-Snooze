@@ -41,9 +41,9 @@
         <div class="header-content">
             <!-- Boutons de gauche (visible sur desktop) -->
             <div class="header-buttons-left">
-                <button class="header-button">Conseils</button>
-                <button class="header-button">Carte</button>
-                <button class="header-button">Professionnels</button>
+                <a class="header-button">Conseils</a>
+                <a class="header-button">Carte</a>
+                <a class="header-button">Professionnels</a>
             </div>
             <!-- Logo (visible sur desktop) -->
             <div id="logo-container">
@@ -53,9 +53,9 @@
             </div>
             <!-- Boutons de droite (visible sur desktop) -->
             <div class="header-buttons-right">
-                <button class="header-button">Journal</button>
-                <button class="header-button" id="lang-toggle">FR</button>
-                <button class="header-button">Connexion</button>
+                <a class="header-button">Journal</a>
+                <a class="header-button" id="lang-toggle">FR</a>
+                <a class="header-button" href="<?php echo get_template_directory_uri(); ?>/pages/compte/inscription.php">Connexion</a>
             </div>
         </div>
     </div>
@@ -76,12 +76,12 @@
 
 <!-- Boutons pour le menu mobile -->
 <div id="mobile-buttons">
-    <button class="header-button">Conseils</button>
-    <button class="header-button">Carte</button>
-    <button class="header-button">Professionnels</button>
-    <button class="header-button">Journal</button>
-    <button class="header-button" id="lang-toggle">FR</button>
-    <button class="header-button">Connexion</button>
+    <a class="header-button">Conseils</a>
+    <a class="header-button">Carte</a>
+    <a class="header-button">Professionnels</a>
+    <a class="header-button">Journal</a>
+    <a class="header-button" id="lang-toggle">FR</a>
+    <a class="header-button">Connexion</a>
 </div>
 
 </header>

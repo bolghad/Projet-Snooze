@@ -1,7 +1,9 @@
 <?php include 'includes/header.php'; ?>
 
 <!-- Contenu de la page -->
-<section id="premier" style="height:70vh"></section>
+<section id="premier" style="height:70vh">
+
+</section>
 
 <!-- Section DeuxiemeSection -->
 <section id="deuxiemeSection">
