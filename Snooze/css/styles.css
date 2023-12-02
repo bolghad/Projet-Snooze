@@ -2,13 +2,28 @@ body{
   background-image: url("../img/fond.svg");
   font-family:Cambria;
 }
-@font-face {
-	font-family: 'DederonB';
-	src: url(‘/fonts/Dederon-Bold.ttf’) format(‘truetype’);
+
+/* Portofino Bold */
+.portofino-bold {
+  font-family: 'PortofinoBold', sans-serif;
+  /* Remplacez 'PortofinoBold' par la police réelle que vous utilisez */
+  font-weight: bold; /* Assurez-vous que la police spécifiée est en gras */
 }
-.dederonBold{
-  font-family: DederonB;
+
+/* Montserrat Regular */
+.montserrat-regular {
+  font-family: 'MontserratRegular', sans-serif;
+  /* Remplacez 'MontserratRegular' par la police réelle que vous utilisez */
+  font-weight: normal; /* Assurez-vous que la police spécifiée est normale (non grasse) */
 }
+
+/* Montserrat Medium */
+.montserrat-medium {
+  font-family: 'MontserratMedium', sans-serif;
+  /* Remplacez 'MontserratMedium' par la police réelle que vous utilisez */
+  font-weight: 500; /* Assurez-vous que la police spécifiée a un poids moyen (medium) */
+}
+
 
 /* Boutons header */
 /* Style pour les boutons du header */
@@ -59,6 +74,15 @@ body{
 }
 
 
+/* Styles pour la version desktop par défaut */
+.header-content {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+
+
 
 /* Barre de chargement */
 #loading-container {
@@ -79,7 +103,10 @@ body{
     transition: height 1s;
     border-top-left-radius: 10px; /* Arrondir les bords */
     border-top-right-radius: 10px; /* Arrondir les bords */
-}
+    position: relative; /* Positionnement relatif pour les éléments enfants */
+    overflow: hidden; /* Cacher le contenu qui dépasse */
+    border-radius: 10px; /* Arrondir les bords */
+  }
 
 #current-time {
     position: absolute;
@@ -88,8 +115,6 @@ body{
     transform: translate(100%, 0);
     padding: 10px;
 }
-
-
 
 
 
