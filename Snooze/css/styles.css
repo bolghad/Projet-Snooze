@@ -51,6 +51,9 @@ body{
     text-align: center;
 }
 
+
+
+
 .header-content {
     display: flex;
     align-items: center;
@@ -84,13 +87,102 @@ body{
 
 
 
+/* ... Vos styles existants ... */
+
+/* Styles pour le menu burger et le logo sur mobile */
+#burger-menu-icon {
+  display: none;
+  cursor: pointer;
+  position: absolute;
+  top: 15px;
+  right: 15px;
+}
+
+#mobile-logo-container {
+  display: none;
+  text-align: center;
+}
+
+#mobile-logo {
+  width: 80px; /* Ajustez la taille du logo selon vos besoins */
+}
+
+/* Styles pour le menu mobile */
+#mobile-buttons {
+  margin-top: 5%;
+  display: none;
+  background-color: #eee; /* Fond gris */
+  padding: 10px; /* Ajoutez un espacement intérieur */
+  width: 70%; /* Définissez la largeur à 70% */
+  margin-left: auto;
+  margin-right: auto;
+  align-items: center;
+  border-radius: 10px;
+}
+
+/* Utilisez block pour chaque élément à l'intérieur de #mobile-buttons */
+#mobile-buttons button {
+  display: block;
+  margin-bottom: 10px; /* Ajoutez un espacement entre les éléments si nécessaire */
+}
+
+/* Media query pour cacher le menu mobile en mode desktop */
+@media screen and (min-width: 781px) {
+  #mobile-buttons {
+    display: none !important; /* Cache le menu mobile */
+  }
+}
+
+
+/* Affichez le menu burger et le logo sur mobile avec une media query */
+@media screen and (max-width: 780px) {
+  /* Cacher le menu desktop */
+  .header-buttons-left, .header-buttons-right, #logo-container {
+      display: none;
+  }
+
+  /* Afficher le logo mobile */
+  #mobile-logo-container {
+      display: block;
+      align-items: center;
+      margin-top: 5%;
+  }
+
+  /* Afficher le menu burger */
+  #burger-menu-icon {
+      display: block;
+      margin-right: 10%;
+      margin-top: 6%;
+  }
+
+  /* ... Styles pour le reste du menu mobile ... */
+}
+
+/* Styles pour le menu mobile lorsqu'il est ouvert */
+#mobile-buttons.show-mobile {
+  display: block;
+}
+#logo-mobile{
+  width: 30%;
+}
+#burger-mobile{
+  width: 90%;
+}
+
+
+
+
+
+
+
+
 /* Barre de chargement */
 #loading-container {
     position: fixed;
     left: 10px;
     top: 50%;
     transform: translateY(-50%);
-    width: 10px;
+    width: 15px;
     height: 60vh; /* 60% de la hauteur de l'écran */
     background-color: rgb(239, 224, 190);
     border-radius: 10px; /* Arrondir les bords */
@@ -99,7 +191,7 @@ body{
 #loading-bar {
     height: 0;
     width: 100%;
-    background-color: #183060;
+    background-color: #0e2338;
     transition: height 1s;
     border-top-left-radius: 10px; /* Arrondir les bords */
     border-top-right-radius: 10px; /* Arrondir les bords */
@@ -115,6 +207,50 @@ body{
     transform: translate(100%, 0);
     padding: 10px;
 }
+
+
+
+
+
+/* Styles pour la deuxième section */
+#deuxiemeSection {
+  width: 100%;
+  overflow: hidden;
+}
+
+#deuxiemeSection .row {
+  margin: 0;
+}
+
+#deuxiemeSection .col-4 {
+  padding: 0;
+}
+
+#deuxiemeSection img {
+  width: 100%;
+  height: auto;
+}
+
+
+
+
+/* Media query pour les écrans de moins de 780px de large */
+@media screen and (max-width: 780px) {
+  #deuxiemeSection .col-4 {
+    width: 100%;
+    margin: 0; /* Supprimer toutes les marges */
+    padding: 0; /* Supprimer tout le padding */
+  }
+
+  #deuxiemeSection img {
+    width: 100%;
+    height: 40vh; /* Utiliser une valeur relative pour définir la hauteur */
+    object-fit: cover;
+  }
+}
+
+
+
 
 
 
@@ -209,4 +345,3 @@ body{
     font-size:13px;
     margin-bottom:0;
   }
-  

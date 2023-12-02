@@ -1,19 +1,12 @@
-// menu mobile
-
 document.addEventListener('DOMContentLoaded', function () {
-    var mobileMenuIcon = document.getElementById('mobile-menu-icon');
-    var mobileLinks = document.getElementById('mobile-links');
+    var mobileMenuIcon = document.getElementById('burger-menu-icon');
+    var mobileButtons = document.getElementById('mobile-buttons');
 
     mobileMenuIcon.addEventListener('click', function () {
         // Toggle l'affichage du menu mobile
-        if (mobileLinks.style.display === 'block') {
-            mobileLinks.style.display = 'none';
-        } else {
-            mobileLinks.style.display = 'block';
-        }
+        mobileButtons.classList.toggle('show-mobile');
     });
 });
-
 
 
 
@@ -43,6 +36,7 @@ document.addEventListener('DOMContentLoaded', function() {
         prevScrollPos = currentScrollPos;
     });
 });
+
 
 
 

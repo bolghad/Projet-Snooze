@@ -20,8 +20,8 @@
         bottom: 0;
         left: 50%;
         transform: translateX(-50%);
-        width: 10px;
-        height: 10px;
+        width: 15px;
+        height: 15px;
         background: url('<?php echo get_template_directory_uri(); ?>/img/icone.png') no-repeat;
         background-size: cover;
     }
@@ -59,26 +59,31 @@
             </div>
         </div>
     </div>
+
+
+    <!-- Mobile -->
+    <!-- Bouton du menu burger (visible sur mobile) -->
+<div id="burger-menu-icon">
+    <img id="burger-mobile" src="<?php echo get_template_directory_uri(); ?>/img/burger.png" alt="Menu">
+</div>
+
+<!-- Logo (visible sur mobile) -->
+<div id="mobile-logo-container">
+    <a href="index.php">
+        <img id ="logo-mobile" src="<?php echo get_template_directory_uri(); ?>/img/logo.png" alt="Logo Snooze" id="mobile-logo">
+    </a>
+</div>
+
+<!-- Boutons pour le menu mobile -->
+<div id="mobile-buttons">
+    <button class="header-button">Conseils</button>
+    <button class="header-button">Carte</button>
+    <button class="header-button">Professionnels</button>
+    <button class="header-button">Journal</button>
+    <button class="header-button" id="lang-toggle">FR</button>
+    <button class="header-button">Connexion</button>
+</div>
+
 </header>
 
-<!-- Menu mobile (visible sur mobile) -->
-<div class="mobile-menu">
-    <a href="index.php">
-                        <img src="<?php echo get_template_directory_uri(); ?>/img/logo.png" alt="Logo Snooze" id="logo">
-                    </a>
-    <!-- Icône de menu burger -->
-    <div id="burger-icon">
-        <!-- Utilisez une icône de menu burger (par exemple, Font Awesome) -->
-        <!-- Exemple avec Font Awesome : -->
-        <i class="fas fa-bars" id="mobile-menu-icon"></i>
-    </div>
-    <!-- Liens du menu (à afficher lorsque l'icône est cliquée) -->
-    <div class="mobile-links" id="mobile-links">
-        <a href="#">Conseils</a>
-        <a href="#">Carte</a>
-        <a href="#">Professionnels</a>
-        <a href="#">Journal</a>
-        <a href="#">FR</a>
-        <a href="#">Connexion</a>
-    </div>
 </div>
