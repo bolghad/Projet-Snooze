@@ -91,6 +91,38 @@ body{
 }
 
 
+/* Styles pour le menu déroulant */
+.dropdown {
+  display: inline-block;
+  position: relative;
+}
+
+.dropdown-content {
+  padding-top: 10%;
+  display: none;
+  position: absolute;
+  background-color: rgba(255, 255, 255, 0.3);
+  z-index: 1;
+}
+
+.dropdown-content a {
+  padding-top: 5%;
+  color: black;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+}
+
+.dropdown-content a:hover {
+  background-color: rgba(119, 188, 245, 0.329);
+}
+
+.dropdown:hover .dropdown-content {
+  display: block;
+}
+
+
+
 
 
 /* ... Vos styles existants ... */
@@ -117,14 +149,31 @@ body{
 #mobile-buttons {
   margin-top: 5%;
   display: none;
-  background-color: #eee; /* Fond gris */
   padding: 10px; /* Ajoutez un espacement intérieur */
   width: 70%; /* Définissez la largeur à 70% */
   margin-left: auto;
   margin-right: auto;
   align-items: center;
   border-radius: 10px;
+  opacity: 0; /* Initialisez l'opacité à 0 (invisible) */
+  transition: opacity 0.5s ease-in-out; /* Ajoutez une transition pour l'opacité */
 }
+
+/* Styles pour le menu mobile lorsqu'il est ouvert */
+#mobile-buttons.show-mobile {
+  display: block;
+  opacity: 1; /* Rend le menu visible lorsqu'il est ouvert */
+}
+
+
+/* Utilisez d-block pour afficher les boutons en colonnes */
+#mobile-buttons a {
+  display: block;
+  margin-bottom: 10px; /* Ajoutez un espacement entre les boutons si nécessaire */
+  text-align: center; /* Centrer le texte dans chaque bouton */
+}
+
+
 
 /* Utilisez block pour chaque élément à l'intérieur de #mobile-buttons */
 #mobile-buttons button {
@@ -157,17 +206,17 @@ body{
   /* Afficher le menu burger */
   #burger-menu-icon {
       display: block;
-      margin-right: 10%;
+      margin-right: 11%;
       margin-top: 6%;
+      width: 8%;
+      top: auto;
   }
 
   /* ... Styles pour le reste du menu mobile ... */
 }
 
 /* Styles pour le menu mobile lorsqu'il est ouvert */
-#mobile-buttons.show-mobile {
-  display: block;
-}
+
 #logo-mobile{
   width: 30%;
 }
@@ -177,6 +226,42 @@ body{
 
 
 
+/* Ajoutez ces styles pour le menu déroulant sur mobile */
+#mobile-buttons .dropdown {
+  display: block;
+  text-align: center;
+}
+
+#mobile-buttons .dropdown-content {
+  padding-top: 0%;
+  margin-top: 0%;
+  text-align: center;
+  position: static;
+  box-shadow: none;
+  border-radius: 0;
+  display: none; /* Ajout de cette ligne pour masquer le menu déroulant par défaut */
+}
+
+#mobile-buttons .dropdown:hover .dropdown-content {
+  display: block;
+}
+
+#mobile-buttons .dropdown-content a {
+  display: block;
+  padding: 10px;
+}
+
+.header-button{
+ text-align: center;
+}
+
+#mobile-buttons .header-button {
+  display: block;
+  text-align: center;
+  padding: 10px;
+  width: 100%; /* Ajout de cette propriété pour occuper toute la largeur */
+  box-sizing: border-box; /* Ajout de cette propriété pour inclure le padding dans la largeur totale */
+}
 
 
 

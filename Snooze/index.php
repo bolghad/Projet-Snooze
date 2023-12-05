@@ -1,4 +1,4 @@
-<?php include 'includes/header.php'; ?>
+<?php get_header(); ?>
 
 <!-- Contenu de la page -->
 <section id="premier" style="height:70vh">
@@ -34,7 +34,7 @@
 <section style="height:10000px;"></section>
 
 
-<?php include 'includes/footer.php'; ?>
+<?php get_footer(); ?>
 
 
 
